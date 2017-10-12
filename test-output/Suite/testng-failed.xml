@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="ff"/>
+  <test name="Test(failed)">
+    <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="testScript.Scenario_Cart">
+        <methods>
+          <include name="launchApp"/>
+          <include name="tearDown"/>
+          <include name="initReports"/>
+          <include name="Cart_Addbook" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testScript.Scenario_Cart -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

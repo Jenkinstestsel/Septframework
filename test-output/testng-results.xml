@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="29495" started-at="2017-10-08T05:55:48Z" finished-at="2017-10-08T05:56:17Z">
+    <groups>
+      <group name="qa">
+        <method signature="Scenario_Cart.Cart_Addbook(java.util.Map)[pri:0, instance:testScript.Scenario_Cart@1caeb3e]" name="Cart_Addbook" class="testScript.Scenario_Cart"/>
+      </group> <!-- qa -->
+    </groups>
+    <test name="Test" duration-ms="29495" started-at="2017-10-08T05:55:48Z" finished-at="2017-10-08T05:56:17Z">
+      <class name="testScript.Scenario_Cart">
+        <test-method status="PASS" signature="initReports()[pri:0, instance:testScript.Scenario_Cart@1caeb3e]" name="initReports" is-config="true" duration-ms="120" started-at="2017-10-08T11:25:47Z" finished-at="2017-10-08T11:25:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReports -->
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScript.Scenario_Cart@1caeb3e]" name="launchApp" is-config="true" duration-ms="7877" started-at="2017-10-08T11:25:48Z" finished-at="2017-10-08T11:25:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="PASS" signature="Cart_Addbook(java.util.Map)[pri:0, instance:testScript.Scenario_Cart@1caeb3e]" name="Cart_Addbook" duration-ms="9615" started-at="2017-10-08T11:25:56Z" data-provider="commondp" finished-at="2017-10-08T11:26:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TC_ID=GB_12, Search_option=Flood and fire, Ascript=AddBook, execute=Y, order=1.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cart_Addbook -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testScript.Scenario_Cart@1caeb3e]" name="tearDown" is-config="true" duration-ms="11400" started-at="2017-10-08T11:26:06Z" finished-at="2017-10-08T11:26:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Cart_Addbook status=SUCCESS method=Scenario_Cart.Cart_Addbook(java.util.Map)[pri:0, instance:testScript.Scenario_Cart@1caeb3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testScript.Scenario_Cart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
