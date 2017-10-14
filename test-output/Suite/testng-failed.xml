@@ -5,14 +5,21 @@
   <test name="Test(failed)">
     <parameter name="browser" value="ff"/>
     <classes>
-      <class name="testScript.Scenario_Cart">
+      <class name="testScript.Scenario_Login">
         <methods>
+          <include name="Login_ValidLogin" invocation-numbers="0"/>
           <include name="launchApp"/>
           <include name="tearDown"/>
           <include name="initReports"/>
-          <include name="Cart_Addbook" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testScript.Scenario_Cart -->
+      </class> <!-- testScript.Scenario_Login -->
+      <class name="testScript.Scenario_Search">
+        <methods>
+          <include name="Search_ValidSearch" invocation-numbers="0 1 2"/>
+          <include name="launchApp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testScript.Scenario_Search -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

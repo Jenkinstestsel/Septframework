@@ -1,12 +1,11 @@
 package generics;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -16,6 +15,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -28,7 +29,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import pageFactory.CommonActions;
 
-public class Base extends CommonActions {
+public class Base_grid extends CommonActions {
 	protected WebDriver driver;
 	public static ExtentReports eReports; 
 	public ExtentTest sTest;
@@ -40,25 +41,26 @@ public class Base extends CommonActions {
 	}
 	
 	
-	@Parameters("browser")
+	@Parameters("config")
 	@BeforeMethod(groups={"uat","qa","dev","prod"})
-	public void launchApp(String brow) throws Exception{
-		browsertype=brow;
-		if(brow.equals("ff")){
-			driver = new FirefoxDriver();
-		}else if(brow.equals("ch")){
+	public void launchApp(String config) throws Exception{
+		browsertype=config;
 		
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
-			driver = new ChromeDriver();		
-			
-		}else if(brow.equals("ie")){
-			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\IEDriverServer.exe");
-			driver = new InternetExplorerDriver();
+		DesiredCapabilities dcap = new DesiredCapabilities();
+		
+		if(config.equals("c1")){
+			dcap.setCapability("browserName", "chrome");
+			dcap.setCapability("version", "46");
+			dcap.setCapability("platform", "WINDOWS");	
+		}else if(config.equals("c2")){
+			dcap.setCapability("browserName", "firefox");
+			dcap.setCapability("version", "42");
+			dcap.setCapability("platform", "WINDOWS");	
 		}
 		
+		driver = new RemoteWebDriver(new URL("http://192.168.1.77:4444/wd/hub"),dcap);
 		
-		
-		driver.get(getprop("url"));
+		driver.get("http://books.rediff.com/");
 		driver.manage().window().maximize();	
 		driver.manage().timeouts().implicitlyWait(75, TimeUnit.SECONDS);
 	}
@@ -82,18 +84,6 @@ public class Base extends CommonActions {
 		
 	}
 	
-	
-//	Utility
-	public String getprop(String Key) throws Exception{
-		
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\GlobalSettings.properties");
-		
-		Properties prop = new Properties();
-		prop.load(fis);
-		
-		return prop.getProperty(Key);
-		
-	}
 	
 		public String sceenshot() throws Exception{
 			TakesScreenshot img = (TakesScreenshot)driver;

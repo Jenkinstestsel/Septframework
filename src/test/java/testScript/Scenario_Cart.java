@@ -3,6 +3,7 @@ package testScript;
 import java.util.Map;
 
 import generics.Base;
+import generics.Base_grid;
 
 import org.junit.Assert;
 import org.testng.annotations.Test;

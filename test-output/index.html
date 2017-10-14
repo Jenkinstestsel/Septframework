@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\August\SeptFramework\testng_cart.xml</span>
+                    <span>E:\August\SeptFramework\firsttestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>1 group</span>
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">7 methods, 4 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScript.Scenario_Login" hash-for-method="Login_ValidLogin({TC_ID=GB_07, Ascript=validLogin, pwd=learn123, execute=y, exp_msg=Hi qtpworld2008g, order=1.0, user...)">Login_ValidLogin({TC_ID=GB_07, Ascript=validLogin, pwd=learn123, execute=y, exp_msg=Hi qtpworld2008g, order=1.0, user...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScript.Scenario_Search" hash-for-method="Search_ValidSearch({TC_ID=GB_10, Search_option=Chandler, Ascript=validSearch, execute=y, order=1.0, Exp_result=200.0})">Search_ValidSearch({TC_ID=GB_10, Search_option=Chandler, Ascript=validSearch, execute=y, order=1.0, Exp_result=200.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScript.Scenario_Search" hash-for-method="Search_ValidSearch({TC_ID=GB_09, Search_option=Ways, Ascript=validSearch, execute=y, order=1.0, Exp_result=300.0})">Search_ValidSearch({TC_ID=GB_09, Search_option=Ways, Ascript=validSearch, execute=y, order=1.0, Exp_result=300.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScript.Scenario_Search" hash-for-method="Search_ValidSearch({TC_ID=GB_11, Search_option=Jaico, Ascript=validSearch, execute=y, order=1.0, Exp_result=2.0})">Search_ValidSearch({TC_ID=GB_11, Search_option=Jaico, Ascript=validSearch, execute=y, order=1.0, Exp_result=2.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +130,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScript.Scenario_Cart" hash-for-method="Cart_Addbook({TC_ID=GB_12, Search_option=Flood and fire, Ascript=AddBook, execute=Y, order=1.0})">Cart_Addbook({TC_ID=GB_12, Search_option=Flood and fire, Ascript=AddBook, execute=Y, order=1.0})</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScript.Scenario_Login" hash-for-method="Login_inValidLogin({TC_ID=GB_02, Ascript=InValidLogin, pwd=lsdfh, execute=  y, exp_msg=Sorry we were unable to complete...)">Login_inValidLogin({TC_ID=GB_02, Ascript=InValidLogin, pwd=lsdfh, execute=  y, exp_msg=Sorry we were unable to complete...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScript.Scenario_Login" hash-for-method="Login_inValidLogin({TC_ID=GB_01, Ascript=inValidLogin          , pwd=lksdj, execute=y  , exp_msg=Sorry we were unable t...)">Login_inValidLogin({TC_ID=GB_01, Ascript=inValidLogin          , pwd=lksdj, execute=y  , exp_msg=Sorry we were unable t...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScript.Scenario_Search" hash-for-method="Search_inValidSearch({TC_ID=GB_08, Search_option=skdh, Ascript=invalidSearch, execute=y, order=1.0, Exp_result=Sorry..&#039;sk...)">Search_inValidSearch({TC_ID=GB_08, Search_option=skdh, Ascript=invalidSearch, execute=y, order=1.0, Exp_result=Sorry..'sk...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -116,18 +155,114 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testScript.Scenario_Cart</span>
+              <img src="failed.png"/>
+              <span class="class-name">testScript.Scenario_Search</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Cart_Addbook({TC_ID=GB_12, Search_option=Flood and fire, Ascript=AddBook, execute=Y, order=1.0})">
-                  </a> <!-- Cart_Addbook({TC_ID=GB_12, Search_option=Flood and fire, Ascript=AddBook, execute=Y, order=1.0}) -->
-                  <span class="method-name">Cart_Addbook</span>
-                  <span class="parameters">({TC_ID=GB_12, Search_option=Flood and fire, Ascript=AddBook, execute=Y, order=1.0})</span>
+                  <a name="Search_ValidSearch({TC_ID=GB_10, Search_option=Chandler, Ascript=validSearch, execute=y, order=1.0, Exp_result=200.0})">
+                  </a> <!-- Search_ValidSearch({TC_ID=GB_10, Search_option=Chandler, Ascript=validSearch, execute=y, order=1.0, Exp_result=200.0}) -->
+                  <span class="method-name">Search_ValidSearch</span>
+                  <span class="parameters">({TC_ID=GB_10, Search_option=Chandler, Ascript=validSearch, execute=y, order=1.0, Exp_result=200.0})</span>
+                  <div class="stack-trace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:92)
+	at org.junit.Assert.fail(Assert.java:100)
+	at testScript.Scenario_Search.Search_ValidSearch(Scenario_Search.java:38)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_ValidSearch({TC_ID=GB_09, Search_option=Ways, Ascript=validSearch, execute=y, order=1.0, Exp_result=300.0})">
+                  </a> <!-- Search_ValidSearch({TC_ID=GB_09, Search_option=Ways, Ascript=validSearch, execute=y, order=1.0, Exp_result=300.0}) -->
+                  <span class="method-name">Search_ValidSearch</span>
+                  <span class="parameters">({TC_ID=GB_09, Search_option=Ways, Ascript=validSearch, execute=y, order=1.0, Exp_result=300.0})</span>
+                  <div class="stack-trace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:92)
+	at org.junit.Assert.fail(Assert.java:100)
+	at testScript.Scenario_Search.Search_ValidSearch(Scenario_Search.java:38)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_ValidSearch({TC_ID=GB_11, Search_option=Jaico, Ascript=validSearch, execute=y, order=1.0, Exp_result=2.0})">
+                  </a> <!-- Search_ValidSearch({TC_ID=GB_11, Search_option=Jaico, Ascript=validSearch, execute=y, order=1.0, Exp_result=2.0}) -->
+                  <span class="method-name">Search_ValidSearch</span>
+                  <span class="parameters">({TC_ID=GB_11, Search_option=Jaico, Ascript=validSearch, execute=y, order=1.0, Exp_result=2.0})</span>
+                  <div class="stack-trace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:92)
+	at org.junit.Assert.fail(Assert.java:100)
+	at testScript.Scenario_Search.Search_ValidSearch(Scenario_Search.java:38)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testScript.Scenario_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_ValidLogin({TC_ID=GB_07, Ascript=validLogin, pwd=learn123, execute=y, exp_msg=Hi qtpworld2008g, order=1.0, user...)">
+                  </a> <!-- Login_ValidLogin({TC_ID=GB_07, Ascript=validLogin, pwd=learn123, execute=y, exp_msg=Hi qtpworld2008g, order=1.0, user...) -->
+                  <span class="method-name">Login_ValidLogin</span>
+                  <span class="parameters">({TC_ID=GB_07, Ascript=validLogin, pwd=learn123, execute=y, exp_msg=Hi qtpworld2008g, order=1.0, username=qtpworld2008@gmail.com})</span>
+                  <div class="stack-trace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:92)
+	at org.junit.Assert.fail(Assert.java:100)
+	at testScript.Scenario_Login.Login_ValidLogin(Scenario_Login.java:111)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.Scenario_Search</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Search_inValidSearch({TC_ID=GB_08, Search_option=skdh, Ascript=invalidSearch, execute=y, order=1.0, Exp_result=Sorry..&#039;sk...)">
+                  </a> <!-- Search_inValidSearch({TC_ID=GB_08, Search_option=skdh, Ascript=invalidSearch, execute=y, order=1.0, Exp_result=Sorry..'sk...) -->
+                  <span class="method-name">Search_inValidSearch</span>
+                  <span class="parameters">({TC_ID=GB_08, Search_option=skdh, Ascript=invalidSearch, execute=y, order=1.0, Exp_result=Sorry..'skdh' does not match any product on Rediff Books.})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.Scenario_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_inValidLogin({TC_ID=GB_02, Ascript=InValidLogin, pwd=lsdfh, execute=  y, exp_msg=Sorry we were unable to complete...)">
+                  </a> <!-- Login_inValidLogin({TC_ID=GB_02, Ascript=InValidLogin, pwd=lsdfh, execute=  y, exp_msg=Sorry we were unable to complete...) -->
+                  <span class="method-name">Login_inValidLogin</span>
+                  <span class="parameters">({TC_ID=GB_02, Ascript=InValidLogin, pwd=lsdfh, execute=  y, exp_msg=Sorry we were unable to complete this step because :, order=1.0, username=qtpworld2008@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_inValidLogin({TC_ID=GB_01, Ascript=inValidLogin          , pwd=lksdj, execute=y  , exp_msg=Sorry we were unable t...)">
+                  </a> <!-- Login_inValidLogin({TC_ID=GB_01, Ascript=inValidLogin          , pwd=lksdj, execute=y  , exp_msg=Sorry we were unable t...) -->
+                  <span class="method-name">Login_inValidLogin</span>
+                  <span class="parameters">({TC_ID=GB_01, Ascript=inValidLogin          , pwd=lksdj, execute=y  , exp_msg=Sorry we were unable to complete this step because :, order=1.0, username=sahdka})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +270,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\August\SeptFramework\testng_cart.xml</span>
+            <span class="header-content">E:\August\SeptFramework\firsttestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +280,8 @@
   &lt;test name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;ff&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScript.Scenario_Cart&quot;/&gt;
+      &lt;class name=&quot;testScript.Scenario_Login&quot;/&gt;
+      &lt;class name=&quot;testScript.Scenario_Search&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -159,7 +295,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,10 +306,50 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">dev</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Login_ValidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">prod</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Login_inValidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">qa</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">Cart_Addbook</span>
+                <span class="method-in-group-name">Login_ValidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Login_inValidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Search_ValidSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">uat</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Login_ValidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Login_inValidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">Search_inValidSearch</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -193,16 +369,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Cart_Addbook')
-data.setCell(0, 2, 'testScript.Scenario_Cart')
-data.setCell(0, 3, 9615);
+data.setCell(0, 1, 'Search_ValidSearch')
+data.setCell(0, 2, 'testScript.Scenario_Search')
+data.setCell(0, 3, 7742);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Search_ValidSearch')
+data.setCell(1, 2, 'testScript.Scenario_Search')
+data.setCell(1, 3, 7663);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Login_inValidLogin')
+data.setCell(2, 2, 'testScript.Scenario_Login')
+data.setCell(2, 3, 7538);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Login_ValidLogin')
+data.setCell(3, 2, 'testScript.Scenario_Login')
+data.setCell(3, 3, 7044);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Login_inValidLogin')
+data.setCell(4, 2, 'testScript.Scenario_Login')
+data.setCell(4, 3, 4866);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Search_ValidSearch')
+data.setCell(5, 2, 'testScript.Scenario_Search')
+data.setCell(5, 3, 4648);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Search_inValidSearch')
+data.setCell(6, 2, 'testScript.Scenario_Search')
+data.setCell(6, 3, 4052);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -217,9 +417,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScript.Scenario_Search</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">initReports</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -228,22 +435,105 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScript.Scenario_Cart</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScript.Scenario_Login</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initReports</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">launchApp(ff)</span>
-                <span class="method-start">720 ms</span>
+                <span class="method-start">802 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Cart_Addbook({TC_ID=GB_12, Search_option=Flood and fire, Ascript=AddBook, execute=Y, order=1.0})</span>
-                <span class="method-start">8598 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_ValidLogin({TC_ID=GB_07, Ascript=validLogin, pwd=learn123, execute=y, exp_msg=Hi qtpworld2008g, order=1.0, user...)</span>
+                <span class="method-start">9052 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=Cart_Addbook status=SUCCESS method=Scenario_Cart.Cart_Addbook(java.util.Map)[pri:0,...)</span>
-                <span class="method-start">18215 ms</span>
+                <span class="method-name">tearDown([TestResult name=Login_ValidLogin status=FAILURE method=Scenario_Login.Login_ValidLogin(java.util.Ma...)</span>
+                <span class="method-start">16098 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(ff)</span>
+                <span class="method-start">19089 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Login_inValidLogin({TC_ID=GB_01, Ascript=inValidLogin          , pwd=lksdj, execute=y  , exp_msg=Sorry we were unable t...)</span>
+                <span class="method-start">27588 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Login_inValidLogin status=SUCCESS method=Scenario_Login.Login_inValidLogin(java.uti...)</span>
+                <span class="method-start">35127 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(ff)</span>
+                <span class="method-start">35576 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Login_inValidLogin({TC_ID=GB_02, Ascript=InValidLogin, pwd=lsdfh, execute=  y, exp_msg=Sorry we were unable to complete...)</span>
+                <span class="method-start">44966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Login_inValidLogin status=SUCCESS method=Scenario_Login.Login_inValidLogin(java.uti...)</span>
+                <span class="method-start">49835 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScript.Scenario_Search</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(ff)</span>
+                <span class="method-start">50326 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Search_ValidSearch({TC_ID=GB_09, Search_option=Ways, Ascript=validSearch, execute=y, order=1.0, Exp_result=300.0})</span>
+                <span class="method-start">58044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Search_ValidSearch status=FAILURE method=Scenario_Search.Search_ValidSearch(java.ut...)</span>
+                <span class="method-start">65709 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(ff)</span>
+                <span class="method-start">67268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Search_ValidSearch({TC_ID=GB_10, Search_option=Chandler, Ascript=validSearch, execute=y, order=1.0, Exp_result=200.0})</span>
+                <span class="method-start">75647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Search_ValidSearch status=FAILURE method=Scenario_Search.Search_ValidSearch(java.ut...)</span>
+                <span class="method-start">83390 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(ff)</span>
+                <span class="method-start">85301 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Search_ValidSearch({TC_ID=GB_11, Search_option=Jaico, Ascript=validSearch, execute=y, order=1.0, Exp_result=2.0})</span>
+                <span class="method-start">93581 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Search_ValidSearch status=FAILURE method=Scenario_Search.Search_ValidSearch(java.ut...)</span>
+                <span class="method-start">98230 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApp(ff)</span>
+                <span class="method-start">99346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Search_inValidSearch({TC_ID=GB_08, Search_option=skdh, Ascript=invalidSearch, execute=y, order=1.0, Exp_result=Sorry..'sk...)</span>
+                <span class="method-start">107868 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=Search_inValidSearch status=SUCCESS method=Scenario_Search.Search_inValidSearch(jav...)</span>
+                <span class="method-start">111921 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
